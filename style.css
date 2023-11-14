@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Playpen+Sans&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+}
+    /* Style untuk header */
+    .header {
+        height: 32vh;
+        background: url(Destroyed\ City.png);
+        background-position: top center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header h1{
+        color: white;
+        font-family: 'Playpen Sans', cursive;
+        font-size: 3rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        background-color: #333;
+    }
+    
+    /* Style untuk menu navigasi atas/top navigation bar */
+    /* Navbar container */
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        font-family: Arial;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    /* Links inside the navbar */
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    /* The dropdown container */
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+    
+    /* Dropdown button */
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+    }
+    
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+    }
+    
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+    .column {
+        float: left;
+    }
+      
+      /* Left and right column */
+    .column.side {
+        width: 25%;
+        height: 100%;
+    }
+      
+      /* Middle column */
+    .column.middle {
+        background-color: white;
+        width: 50%;
+        height: 100%;
+    }
+      
+      /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column.side, .column.middle {
+          width: 100%;
+        }
+    }
+      
+      /* Clear floats after the columns */
+      .row{
+        display: flex;
+        background-color: rgb(21, 31, 46);
+        align-items: center;
+      }
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    ol{
+        margin-left: 15px;
+    }
+
+    p{
+        font-size: 1rem;
+        text-align: justify;
+        padding: 5px 0;
+    }
+
+    img{
+        width: max-content;
+        max-width: 240px;
+    }
+
+    .center_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .card{
+        padding: 10px;
+    }
+    
+    /* Style untuk footer */
+    .footer {
+    background-color: rgb(111, 201, 217);
+    color: rgb(72, 34, 150);
+    padding: 10px;
+    text-align: center;
+    }
+
+th, td{
+    text-align: center;
+}
+
+#lotus{
+    max-width: 500px;
+    width: 50vw;
+    height: auto;
+}
+
+th{
+    padding: 20px 0;
+}
+
+td{
+    padding: 8px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer p{
+    font-size: 1.5rem;
+}
+
+i{
+    color: white;
+    font-size: 2rem;
+}
